@@ -46,3 +46,7 @@ function textAreaAdjust(t = textArea) {
 document.addEventListener("DOMContentLoaded", function() {
   textAreaAdjust(textArea)
 });
+
+window.onresize = function() {
+    textAreaAdjust(textArea)
+};

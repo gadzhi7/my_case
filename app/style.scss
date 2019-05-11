@@ -111,7 +111,7 @@ h2 {
 }
 
 header {
-  min-height: 160px;
+  min-height: 110px;
   position: relative;
 
   .logo {
@@ -127,6 +127,8 @@ header {
 
 // дело
 .case {
+	margin-top: 0!important;
+
   .case__img {
     display: block;
     margin-left: auto;
@@ -387,7 +389,7 @@ header {
     }
   }
   .case .case__img {
-    margin-bottom: 20px;
+    margin: 20px auto;
    }
    .field {
      flex-wrap: wrap;
