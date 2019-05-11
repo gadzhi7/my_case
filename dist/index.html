@@ -1,19 +1,13 @@
-<html lang="en">
-
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<link href="http://allfont.ru/allfont.css?fonts=courier-new" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://allfont.ru/allfont.css?fonts=courier-new" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
   <title>Portfolio gkhabada.h1n.ru</title>
 </head>
-
 <body>
-
   <div id="wrapper">
 
     <header>
@@ -21,134 +15,175 @@
       <img src="img/stamp.png" alt="печать" class="stamp">
     </header>
 
+    <!-- дело -->
     <section class="case">
       <img src="img/case.png" alt="Дело" class="case__img">
       <div class="field">
-        <p>Полное ФИО</p>
-        <input class="cases_input" type="text" name="full_name" value="Гаджидадаев Гаджи Расулович">
+        <label for="full_name">Полное ФИО</label>
+        <input class="cases_input" id="full_name" type="text" name="full_name" value="Гаджидадаев Гаджи Расулович">
       </div>
       <div class="field">
-        <p>Год рождения</p>
-        <input class="cases_input" type="text" name="full_name" value="1995">
+        <label for="was_born">Год рождения</label>
+        <input class="cases_input" id="was_born" type="text" name="was_born" oninput="this.value=this.value.replace(/[^0-9]/g,'');" value="1995">
       </div>
       <div class="field">
-        <p>Место жительства</p>
-        <input class="cases_input" type="text" name="full_name" value="г. Махачкала, Россия">
+        <label for="live_place">Место жительства</label>
+        <input class="cases_input" id="live_place" type="text" name="live_place" value="г. Махачкала, Россия">
       </div>
       <div class="field">
-        <p>Скайп</p>
-        <input class="cases_input" type="text" name="full_name" value="sarir... (редко захожу)">
+        <label for="skype">Скайп</label>
+        <input class="cases_input" id="skype" type="text" name="skype" value="sarir... (редко захожу)">
       </div>
       <div class="field">
-        <p>Почта</p>
-        <input class="cases_input" type="text" name="full_name" value="gadzhi7.7.7@mail.ru">
+        <label for="email">Почта</label>
+        <input class="cases_input" type="email" id="email" name="email" value="gadzhi7.7.7@mail.ru">
       </div>
     </section>
 
+    <!-- о себе чекбоксами -->
     <section class="by-checkbox">
       <h2>Расскажите о себе чекбоксами</h2>
-      <p class="text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+      <p class="text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми
+        гарантировано будете справляться.</p>
       <div class="checkboxs">
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>БЭМ/OOCSS</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>БЭМ/OOCSS
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Pug (Jade)</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Pug (Jade)
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Stylus/LESS/SASS</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Stylus/LESS/SASS
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Работаю с SVG</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Работаю с SVG
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Верстаю семантично</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Верстаю семантично
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Accessibility (A11Y)</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Accessibility (A11Y)
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>ES2015/ES2016</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>ES2015/ES2016
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Gulp/GRUNT</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Gulp/GRUNT
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Webpack</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Webpack
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Дружу с WebGL</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Дружу с WebGL
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>jQuery</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" hidden >
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Знаю/изучаю Angular</label>
-        </div>
-        <div class="checkbox">
-          <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Знаю/изучаю React</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>jQuery
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Знаю/изучаю Node.js</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Знаю/изучаю Angular
+          </label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Знаю/изучаю React
+          </label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Знаю/изучаю Node.js
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Использую Git</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Использую Git
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>С глазомером всё ок</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>С глазомером всё ок
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Читаю <a href="http://blog.csssr.ru/" target="_blank"> blog.csssr.ru</a></label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Читаю <a href="http://blog.csssr.ru/" target="_blank"> blog.csssr.ru</a>
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>Я ленивый(-ая)</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>Я ленивый(-ая)
+          </label>
         </div>
         <div class="checkbox">
           <input type="checkbox" hidden checked>
-          <label class="checkbox__label"><div class="checkbox__custom"></div>У меня хороший английский</label>
+          <label class="checkbox__label">
+            <div class="checkbox__custom"></div>У меня хороший английский
+          </label>
         </div>
       </div>
     </section>
 
+    <!-- Уровень владения JavaScript -->
     <section class="js-level">
       <h2>Уровень владения JavaScript</h2>
       <div class="js-level__progressbar">
         <p>Не владею</p>
         <p>Использую готовые решения</p>
-        <p class="js-level__checked">Использую готовые решения
-          и умею их переделывать</p>
+        <p class="js-level__checked">Использую готовые решения и умею их переделывать</p>
         <p>Пишу сложный JS с нуля</p>
       </div>
     </section>
 
+    <!-- о себе словами -->
     <section class="about-me">
       <h2>Расскажите о себе словами</h2>
       <p class="text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
       <div class="about-me__text">
-        <input type="text" class="cases_input" value="Ну-ууу-уу...">
-        <input type="text" class="cases_input" value="Ээээ...">
-        <input type="text" class="cases_input" value="Ээээ...">
+        <textarea class="about-me_textarea" name="about_me">В чекбоксах не было указано Vue.js (на нем я работаю уже более 4х месяц) в агентсве. &#13;&#10;Причины по которым хочу поменять организацию: работать удаленно и задержки заработной платы. &#13;&#10;Ваша вакансия привлека тем, что есть актуальные на данный момент требования (значит сильная команда и сам тоже могу развиваться) и хорошее зп. Ожидаю от работы повыситься до полноценного frontend разработчика, приятного коллектива и интресных проектов.</textarea>
       </div>
     </section>
 
+    <!-- планы на будущее -->
     <section class="future">
       <h2>Какие у вас планы на будущее?</h2>
       <p class="text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
@@ -185,6 +220,7 @@
       </div>
     </section>
 
+    <!-- Дата заполнения -->
     <section class="date">
       <p>Дата заполнения</p>
       <input type="date" class="cases_input" value="2019-05-11">
@@ -192,8 +228,6 @@
 
   </div>
 
-
   <script src="app.js"></script>
 </body>
-
 </html>
