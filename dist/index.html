@@ -1,16 +1,166 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+ <link href="http://allfont.ru/allfont.css?fonts=courier-new-cyr" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <title>Portfolio gkhabada.h1n.ru</title>
 </head>
+
 <body>
+
+  <div id="wrapper">
+
+    <header>
+      <img src="img/logo.png" alt="логотип" class="logo">
+      <img src="img/stamp.png" alt="печать" class="stamp">
+    </header>
+
+    <section class="case">
+      <img src="img/case.png" alt="Дело" class="case__img">
+      <div class="field">
+        <p>Полное ФИО</p>
+        <input class="cases_input" type="text" name="full_name" value="Гаджидадаев Гаджи Расулович">
+      </div>
+      <div class="field">
+        <p>Год рождения</p>
+        <input class="cases_input" type="text" name="full_name" value="1995">
+      </div>
+      <div class="field">
+        <p>Место жительства</p>
+        <input class="cases_input" type="text" name="full_name" value="г. Махачкала, Россия">
+      </div>
+      <div class="field">
+        <p>Скайп</p>
+        <input class="cases_input" type="text" name="full_name" value="sarir... (редко захожу)">
+      </div>
+      <div class="field">
+        <p>Почта</p>
+        <input class="cases_input" type="text" name="full_name" value="gadzhi7.7.7@mail.ru">
+      </div>
+    </section>
+
+    <section class="by-checkbox">
+      <h2>Расскажите о себе чекбоксами</h2>
+      <p class="text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+      <div class="checkboxs">
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>БЭМ/OOCSS</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Pug (Jade)</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Stylus/LESS/SASS</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Работаю с SVG</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Верстаю семантично</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Accessibility (A11Y)</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>ES2015/ES2016</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Gulp/GRUNT</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Webpack</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Дружу с WebGL</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>jQuery</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden >
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Знаю/изучаю Angular</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Знаю/изучаю React</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Знаю/изучаю Node.js</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Использую Git</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>С глазомером всё ок</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Читаю <a href="http://blog.csssr.ru/" target="_blank"> blog.csssr.ru</a></label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>Я ленивый(-ая)</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" hidden checked>
+          <label class="checkbox__label"><div class="checkbox__custom"></div>У меня хороший английский</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="js-level">
+      <h2>Уровень владения JavaScript</h2>
+      <div class="js-level__progressbar"></div>
+    </section>
+
+    <section class="about-me">
+      <h2>Расскажите о себе словами</h2>
+      <p>Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+      <div class="about-me__text">
+        <input type="text" class="cases_input" value="Ну-ууу-уу...">
+        <input type="text" class="cases_input" value="Ээээ...">
+        <input type="text" class="cases_input" value="Ээээ...">
+      </div>
+    </section>
+
+    <section class="future">
+      <h2></h2>
+      <p></p>
+      <div class="radios">
+        <input type="text">
+        <label for=""></label>
+      </div>
+    </section>
+
+    <section class="date">
+      <p></p>
+      <input type="text">
+    </section>
+
+  </div>
+
 
   <script src="app.js"></script>
 </body>
+
 </html>

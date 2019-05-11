@@ -14,6 +14,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/dist',
+    // publicPath: __dirname + '/dist/',
     filename: 'app.js'
   },
 
@@ -78,7 +79,6 @@ module.exports = {
           }]
         })
       },
-
       {
         test: /\.(scss|sass)$/,
         use: ExtractTextPlugin.extract({
@@ -99,16 +99,23 @@ module.exports = {
             "sass-loader"
           ]
         })
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: "file-loader",
+        options: {
+          outputPath: 'img',
+        },
       }
     ]
   },
 
   devServer: {
-      contentBase: 'dist',
-      stats: "errors-only",
-      compress: true,
-      open: true, // Open the page in browser
-      overlay: true,
-      port: 8080
-    }
+    contentBase: 'dist',
+    stats: "errors-only",
+    compress: true,
+    open: true,
+    overlay: true,
+    port: 8080
+  }
 };
