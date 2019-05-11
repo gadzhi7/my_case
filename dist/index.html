@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
- <link href="http://allfont.ru/allfont.css?fonts=courier-new-cyr" rel="stylesheet" type="text/css" />
+<link href="http://allfont.ru/allfont.css?fonts=courier-new" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
@@ -130,12 +130,18 @@
 
     <section class="js-level">
       <h2>Уровень владения JavaScript</h2>
-      <div class="js-level__progressbar"></div>
+      <div class="js-level__progressbar">
+        <p>Не владею</p>
+        <p>Использую готовые решения</p>
+        <p class="js-level__checked">Использую готовые решения
+          и умею их переделывать</p>
+        <p>Пишу сложный JS с нуля</p>
+      </div>
     </section>
 
     <section class="about-me">
       <h2>Расскажите о себе словами</h2>
-      <p>Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+      <p class="text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
       <div class="about-me__text">
         <input type="text" class="cases_input" value="Ну-ууу-уу...">
         <input type="text" class="cases_input" value="Ээээ...">
@@ -144,17 +150,44 @@
     </section>
 
     <section class="future">
-      <h2></h2>
-      <p></p>
+      <h2>Какие у вас планы на будущее?</h2>
+      <p class="text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
       <div class="radios">
-        <input type="text">
-        <label for=""></label>
+        <div class="radio">
+          <input type="radio" name="future" hidden>
+          <label class="radio__label">
+            <div class="radio__castom"></div>
+            Верстать
+          </label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="future" checked hidden>
+          <label class="radio__label">
+            <div class="radio__castom"></div>
+            Прокачиваться в JS
+          </label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="future" hidden>
+          <label class="radio__label">
+            <div class="radio__castom"></div>
+            Менеджерство
+          </label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="future" hidden>
+          <label class="radio__label">
+            <div class="radio__castom"></div>
+            Другое
+          </label>
+        </div>
+
       </div>
     </section>
 
     <section class="date">
-      <p></p>
-      <input type="text">
+      <p>Дата заполнения</p>
+      <input type="date" class="cases_input" value="2019-05-11">
     </section>
 
   </div>

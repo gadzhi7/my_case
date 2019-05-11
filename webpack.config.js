@@ -105,7 +105,14 @@ module.exports = {
         loader: "file-loader",
         options: {
           outputPath: 'img',
-        },
+        }
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=./app/fonts/[name].[ext]',
+        options: {
+          outputPath: 'fonts',
+        }
       }
     ]
   },
